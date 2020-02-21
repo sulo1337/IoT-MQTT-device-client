@@ -26,6 +26,7 @@ mqtt = mySystem.Messaging(thisUserObject)
 
 #what to do after connection
 def on_connect(client, userdata, flags, rc):
+    #listen/subscribe to analytics topic
     client.subscribe("analytics")
 
 #what to do after receiving message
