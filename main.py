@@ -48,7 +48,7 @@ batchNo = 0
 iter = 0
 while True:
     #every 5 seconds, send CPU usage information to the clearblade IoT code service
-    if (iter%5 == 0):
+    if (iter%10 == 0):
         batchNo += 1
         timestamp = time.time()
         timestamp = int(timestamp)
